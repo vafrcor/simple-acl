@@ -7,15 +7,15 @@ return [
     |--------------------------------------------------------------------------
     |
     | Register available site modules
-    | Format: 
+    | Format => 
     |  "{module_code}" => [
     |    "label" => "{label_value}",
     |    "description" => "{description_value}",
-    |    "actions": [
+    |    "actions" => [
     |      [ 
-    |        "label": "{label_value}",
-    |        "code": "{code_value}",
-    |        "description": "{description_value}"
+    |        "label" => "{label_value}",
+    |        "code" => "{code_value}",
+    |        "description" => "{description_value}"
     |      ]
     |    ]
     |  ]
@@ -24,10 +24,10 @@ return [
 
     'modules' => [
         "user" => [
-            "label": "User",
-            "description": "Module that user data",
+            "label"=> "User",
+            "description"=> "Module that user data",
             "status" => true,
-            "actions": [
+            "actions" => [
                 ["label" => "Create","code" => "cr","description" => "create an user record"],
                 ["label" => "Read","code" => "rd","description" => "read an user record"],
                 ["label" => "Update","code" => "ud","description" => "update an user record"],
@@ -48,7 +48,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | Register available ACL Groups
-    | Format: 
+    | Format => 
     |  "{group_code}" => [
     |    "label" => "{label_value}",
     |    "description" => "{description_value}"
@@ -80,7 +80,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | Register available ACL Roles
-    | Format: 
+    | Format => 
     |  "{role_code}" => [
     |    "label" => "{label_value}",
     |    "description" => "{description_value}"
@@ -122,7 +122,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | Register available ACL Permissions
-    | Format: 
+    | Format => 
     |  "{role_code}" => [
     |    "{module_name}" => [
     |      "{action_code}",
